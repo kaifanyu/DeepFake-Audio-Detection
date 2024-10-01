@@ -20,6 +20,40 @@ The data used comes from DEEP-VOICE: DeepFake Voice Recognition dataset. The dat
 More information can be found at: [Kaggle Dataset](https://www.kaggle.com/datasets/birdy654/deep-voice-deepfake-voice-recognition/)
 
 
+
+## Getting Started
+
+<!-- Model checkpoints can be downloaded at: [https://drive.google.com/drive/folders/1JmsNXJ9Hsimfr2JaOQ9sa2yyxFtptSyK?usp=sharing](https://drive.google.com/drive/folders/sfsdfsdfsdfsdf) -->
+
+The following model checkpoints are available:
+
+- LSTM
+- Transformer
+- Wav2Vec2
+
+  
+## Installation
+
+The code requires `python>=3.8`. Required dependencies are found in `requirements.txt`.
+
+Clone the repository locally using
+
+```
+git clone https://github.com/kaifanyu/DeepFake-Audio-Detection.git
+```
+
+Create a virtual environment for dependencies (optional) then install dependencies using
+
+```
+pip install -r requirements.txt
+```
+
+<!-- 
+## ML Pipeline
+
+<img src="images/pipeline.png" alt="ML_Pipeline" width="700"/> -->
+
+
 ## LSTM Model
 
 The LSTM model consist of 6 layers
@@ -37,36 +71,7 @@ The Transformer model
 <img src='images/wav2vec2-struct.png' height=300>
 
 
-## Installation
 
-The code requires `python>=3.8`. Required dependencies are found in `requirements.txt`.
-
-Clone the repository locally using
-
-```
-git clone https://github.com/kaifanyu/DeepFake-Audio-Detection.git
-```
-
-Create a virtual environment for dependencies (optional) then install dependencies using
-
-```
-pip install -r requirements.txt
-```
-
-## Getting Started
-
-<!-- Model checkpoints can be downloaded at: [https://drive.google.com/drive/folders/1JmsNXJ9Hsimfr2JaOQ9sa2yyxFtptSyK?usp=sharing](https://drive.google.com/drive/folders/sfsdfsdfsdfsdf) -->
-
-The following model checkpoints are available:
-
-- LSTM
-- Transformer
-- Wav2Vec2
-
-<!-- 
-## ML Pipeline
-
-<img src="images/pipeline.png" alt="ML_Pipeline" width="700"/> -->
 
 ## Performance
 
