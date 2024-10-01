@@ -12,6 +12,14 @@ This project aims to detect Deepfake generated audio by creating three different
 ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
+
+## Dataset
+
+The data used comes from DEEP-VOICE: DeepFake Voice Recognition dataset. The dataset is composed of 56 ai audio files, 8 real audio files, and a csv document containing 11779 x 26 features extracted using librosa. Using librosa and the audio files, a new dataset consisting of 10 consecutive seconds datapoints were generated for better recurrent neural network analysis
+
+More information can be found at: [Kaggle Dataset](https://www.kaggle.com/datasets/birdy654/deep-voice-deepfake-voice-recognition/)
+
+
 ## LSTM Model
 
 The LSTM model consist of 6 layers
@@ -68,15 +76,12 @@ The following shows various aspects for each model.
 <img src="images/result.png" alt="ML_Pipeline" height="300"/>
 </div>
 
+<br>
+
 Comparison of LSTM, Transformer v1, and Wav2Vec2 custom model.
 
 Although different datapoints were used between the Wav2Vec2 model as it was extracted using Wav2Vec2 pretrained model, most of the models actually performed relatively the same when scored, with some models just slightly outperforming the others. The Wav2Vec2 gave the best overall accuracy
 
-## Dataset
-
-The data used comes from DEEP-VOICE: DeepFake Voice Recognition dataset. The dataset is composed of 56 ai audio files, 8 real audio files, and a csv document containing 11779 x 26 features extracted using librosa.
-
-More information can be found at: [Kaggle Dataset](https://www.kaggle.com/datasets/birdy654/deep-voice-deepfake-voice-recognition/)
 
 ## Acknowledgements
 
